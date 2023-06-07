@@ -1,0 +1,11 @@
+apk/integration/*
+apk/manager/*
+apk/microg/*
+apk/youtube/*
+apk/youtube_music/*
+apk/*.apk
+bin/*
+output/*
+.DS_Store
+options*
+package-lock.json
