@@ -27,7 +27,7 @@ else
     echo "not installed"
 fi
 
-
-source microg.zsh
-source youtube.zsh
-source youtube_music.zsh
+# 🤔 source is not working for some reason
+zsh microg.zsh
+zsh youtube.zsh
+zsh youtube_music.zsh

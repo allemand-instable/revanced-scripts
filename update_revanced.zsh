@@ -36,6 +36,7 @@ else
     rm -r *.json
     
     # ❗ download the file (browser_download_url corresponds to the jar file) in bin
+
     curl -s https://api.github.com/repos/revanced/revanced-cli/releases/latest \
     | grep "browser_download_url" \
     | cut -d : -f 2,3 \
@@ -107,6 +108,11 @@ else
     sed -i.bak "1 s/.*/cli_file=\"\.\/bin\/revanced-cli-${cli_version_var}-all.jar\"/" youtube.zsh
     sed -i.bak "2 s/.*/patch_file=\"\.\/bin\/revanced-patches-${patches_version_var}.jar\"/" youtube.zsh
     sed -i.bak "3 s/.*/integration_file=\"\.\/apk\/revanced-integrations-${integrations_version_var}.apk\"/" youtube.zsh
+    # ➤ youtube music
+    cd ../
+    sed -i.bak "1 s/.*/cli_file=\"\.\/bin\/revanced-cli-${cli_version_var}-all.jar\"/" youtube_music.zsh
+    sed -i.bak "2 s/.*/patch_file=\"\.\/bin\/revanced-patches-${patches_version_var}.jar\"/" youtube_music.zsh
+    sed -i.bak "3 s/.*/integration_file=\"\.\/apk\/revanced-integrations-${integrations_version_var}.apk\"/" youtube_music.zsh
 fi
 
 
@@ -116,8 +122,7 @@ if [ "$(command -v exa)" ]; then
     exa --color=always --sort=ext --group-directories-first --icons
 fi
 
-
-
+pwd
 apk_folders=("apk/youtube" "apk/youtube_music")
 
 for apk_current_folder in "${apk_folders[@]}"; do
@@ -128,7 +133,9 @@ for apk_current_folder in "${apk_folders[@]}"; do
         ls -p "${apk_current_folder}" | grep -v /
     fi
     echo "———————————————————————"
-    echo "type 'download' for downloading the apk from apkmirror"
+    echo "processor architecture : $(adb shell getprop ro.product.cpu.abi)"
+    # user needs to know the architecture of his phone to download the right apk file
+    echo "type 'download' for downloading the apk from apkmirror / 'cancel' to continue without downloading"
     while true; do
         if [[ "${SHELL}" == *"zsh"* ]]; then
             read 'choice?➤ your choice : '

@@ -9,3 +9,5 @@ output/*
 .DS_Store
 options*
 package-lock.json
+*.apk*
+revanced-cache*
