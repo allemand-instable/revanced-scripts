@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/error_swipe_to_retry_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/item_extra_extra_large_spacing">
+            <android.support.v7.widget.AppCompatImageView android:id="@id/loading_error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/item_extra_large_spacing" android:src="@drawable/yt_outline_cloud_off_white_48" yt:tint="@color/ytm_text_color_secondary_translucent" yt:tintMode="src_in" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Reason1.Translucent" android:gravity="center_horizontal" android:id="@id/error_message_text" android:padding="@dimen/item_large_spacing" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:robotoFont="medium" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeButton android:layout_gravity="center" android:id="@id/show_offlined_music" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeButton android:id="@id/error_retry_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_small_spacing" />
+        </LinearLayout>
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="?android:selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/MusicBottomSheetSelectableItemBackground"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:layout_gravity="center" android:id="@id/icon_container" android:layout_width="@dimen/bottom_sheet_list_icon_size" android:layout_height="@dimen/bottom_sheet_list_icon_size" android:layout_marginTop="@dimen/item_medium_spacing" android:layout_marginBottom="@dimen/item_medium_spacing" android:layout_marginStart="@dimen/item_extra_extra_large_spacing" android:layout_marginEnd="@dimen/item_extra_extra_large_spacing" android:layout_alignParentStart="true">
+        <ProgressBar android:id="@id/loading_spinner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" style="?android:progressBarStyle" />
+        <ImageView android:id="@id/icon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:tint="@color/ytm_icon_color_active" android:contentDescription="@null" />
+    </FrameLayout>
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.ListItemTitle" android:ellipsize="end" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:textAlignment="viewStart" android:layout_marginEnd="@dimen/item_extra_extra_large_spacing" android:layout_toEndOf="@id/icon_container" />
+</RelativeLayout>

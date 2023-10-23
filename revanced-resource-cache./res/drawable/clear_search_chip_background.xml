@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:layout_width="@dimen/cloud_chip_height" android:layout_height="@dimen/cloud_chip_height" android:shape="oval"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/ytm_color_white" />
+</shape>

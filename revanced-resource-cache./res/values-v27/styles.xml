@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AboutThisAdWebViewDialog.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/AboutThisAdWebviewDialogSlideAnimation</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:navigationBarColor">@color/yt_black_pure</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Base.Theme.GoogleMaterial.Light" parent="@style/Base.V27.Theme.GoogleMaterial.Light" />
+    <style name="Base.Theme.GoogleMaterial3.Light" parent="@style/Base.V27.Theme.GoogleMaterial3.Light" />
+    <style name="ChannelCreation.FullScreen" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@style/ChannelCreationDialogSlideAnimation</item>
+        <item name="android:background">?ytBrandBackgroundPrimary</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:navigationBarColor">@color/yt_black_pure</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Mdx.Theme.Settings.Dark.DarkerPalette" parent="@style/Base.V23.Mdx.Theme.Settings.Dark.DarkerPalette">
+        <item name="android:navigationBarColor">?ytBaseBackground</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+    <style name="Mdx.Theme.Settings.DarkerPalette" parent="@style/Base.V23.Mdx.Theme.Settings.DarkerPalette">
+        <item name="android:navigationBarColor">?ytBaseBackground</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Base.V27.Theme.GoogleMaterial.Light" parent="@style/Base.V24.Theme.GoogleMaterial.Light">
+        <item name="android:navigationBarColor">@color/google_white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+    <style name="Base.V27.Theme.GoogleMaterial3.Light" parent="@style/Base.V24.Theme.GoogleMaterial3.Light">
+        <item name="android:navigationBarColor">@color/gm3_ref_palette_white</item>
+        <item name="android:windowLightNavigationBar">true</item>
+    </style>
+</resources>

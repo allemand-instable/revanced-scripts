@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="carousel_num_large_items_visible">4</integer>
+    <integer name="carousel_num_medium_items_visible">5</integer>
+    <integer name="carousel_num_two_column_items_visible">2</integer>
+    <integer name="carousel_num_video_only_items_visible">3</integer>
+    <integer name="long_text_description_shelf_width_cols">9</integer>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout android:id="@id/single_item" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/thumbnail_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <View android:id="@id/background_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="10.0" android:layout_above="@id/subtitle_container" android:paddingStart="@dimen/full_bleed_item_text_margin_start">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display1" android:ellipsize="end" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:maxLines="2" android:layout_weight="8.0" android:textAlignment="viewStart" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/subtitle_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/full_bleed_item_text_margin_bottom" android:baselineAligned="false" android:weightSum="10.0" android:layout_alignParentBottom="true" android:paddingStart="@dimen/full_bleed_item_text_margin_start">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="8.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/subtitle_badges_container" android:paddingTop="@dimen/full_bleed_item_badge_container_padding_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/badge_container_space_divider" android:showDividers="end|middle" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Body1" android:ellipsize="end" android:id="@id/subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" />
+        </LinearLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/thumbnail_overlay_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</com.google.android.libraries.youtube.common.ui.FixedAspectRatioRelativeLayout>

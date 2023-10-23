@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/add_to_playlist_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.core.widget.NestedScrollView android:orientation="vertical" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/top_playlists_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/top_divider" android:background="@color/music_shelf_separator_light" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentTop="true" />
+                <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Caption" android:id="@id/add_to_playlist_top_playlists_title" android:paddingTop="@dimen/item_small_spacing" android:paddingBottom="@dimen/item_small_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top_divider" android:textAllCaps="true" android:textAlignment="viewStart" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding" />
+                <android.support.v7.widget.RecyclerView android:id="@id/top_playlists" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/add_to_playlist_top_playlists_title" />
+            </RelativeLayout>
+            <View android:id="@id/section_divider" android:background="@color/music_shelf_separator_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Caption" android:id="@id/add_to_playlist_all_playlists_title" android:paddingTop="@dimen/item_small_spacing" android:paddingBottom="@dimen/item_small_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:textAlignment="viewStart" android:paddingStart="?dialogPreferredPadding" android:paddingEnd="?dialogPreferredPadding" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.RecyclerView android:id="@id/playlists" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </RelativeLayout>
+            <View android:id="@id/bottom_divider" android:background="@color/music_shelf_separator_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/actions" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/item_extra_extra_large_spacing" android:layout_marginTop="@dimen/item_small_medium_spacing" android:layout_marginRight="@dimen/item_extra_extra_large_spacing" android:layout_marginBottom="@dimen/item_small_medium_spacing" android:layout_marginHorizontal="@dimen/item_extra_extra_large_spacing" android:layout_marginVertical="@dimen/item_small_medium_spacing" />
+</LinearLayout>

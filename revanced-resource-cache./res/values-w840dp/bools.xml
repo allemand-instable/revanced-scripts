@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="enable_srp_3col_tab_labels">true</bool>
+    <bool name="enable_srp_6col_list">true</bool>
+    <bool name="enable_srp_card_shelf_thumbnail_to_the_side">false</bool>
+    <bool name="enable_srp_split_presentation">true</bool>
+</resources>

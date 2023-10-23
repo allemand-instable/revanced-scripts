@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.youtube.music.player.PlayerPanel android:id="@id/player_panel" android:background="@color/yt_black_pure" android:layout_width="0.0dip" android:layout_height="0.0dip" android:contentDescription="@string/accessibility_video_player"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.youtube.music.player.MusicPlayerView android:id="@id/watch_player" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.apps.youtube.music.ui.components.chipcloud.ChipCloudChipView android:layout_gravity="bottom" android:id="@id/player_overlay_chip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/mdx_chip_cloud_chip_audio_side_margin" android:layout_marginRight="@dimen/mdx_chip_cloud_chip_audio_side_margin" android:layout_marginBottom="@dimen/mdx_chip_cloud_chip_bottom_margin" android:layout_centerHorizontal="true" />
+    <RelativeLayout android:id="@id/player_error_icon_layout" android:background="@color/darker_transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/player_error_icon" android:layout_width="@dimen/watch_while_mini_player_error_icon_size" android:layout_height="@dimen/watch_while_mini_player_error_icon_size" android:layout_margin="@dimen/item_extra_small_spacing" android:tint="@color/ytm_color_grey_06" android:layout_centerInParent="true" android:contentDescription="@null" yt:srcCompat="@drawable/yt_outline_alert_circle_white_24" />
+    </RelativeLayout>
+</com.google.android.apps.youtube.music.player.PlayerPanel>

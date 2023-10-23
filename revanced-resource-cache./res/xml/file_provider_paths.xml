@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <files-path name="offline_files" path="offline/" />
+    <external-path name="external_files" path="." />
+    <cache-path name="story_share_files" path="story_share/" />
+    <cache-path name="image_share_files" path="image_share/" />
+    <external-files-path name="external_media_files_path" path="offline/" />
+    <external-files-path name="logs" path="logs" />
+</paths>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textColor="@color/ytm_text_color_secondary" android:id="@id/content_owner_rights" android:paddingTop="@dimen/item_extra_small_spacing" android:paddingBottom="@dimen/item_extra_small_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/content_owner_rights_text" android:textAlignment="viewStart" android:paddingStart="@dimen/item_large_spacing" android:paddingEnd="@dimen/item_large_spacing" yt:hyperlinksClickable="true" yt:robotoFont="regular"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" />

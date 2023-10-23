@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout android:id="@id/queue_page_header" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:elevation="0.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/queue_collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:layout_scrollFlags="enterAlways|scroll|snap" yt:scrimAnimationDuration="200">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:layout_collapseMode="pin">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textColor="@color/ytm_text_color_secondary_translucent" android:ellipsize="end" android:id="@id/header_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_medium_spacing" android:layout_marginStart="@dimen/item_large_spacing" android:layout_marginEnd="@dimen/item_large_spacing" android:layout_toStartOf="@id/header_action" yt:robotoFont="regular" />
+                <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textStyle="bold" android:textColor="@color/yt_white1" android:textColorLink="@color/yt_white1" android:ellipsize="end" android:id="@id/header_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_extra_small_spacing" android:layout_marginBottom="@dimen/item_medium_spacing" android:maxLines="1" android:layout_below="@id/header_title" android:layout_marginStart="@dimen/item_large_spacing" android:layout_marginEnd="@dimen/item_large_spacing" android:layout_toStartOf="@id/header_action" yt:hyperlinksClickable="true" yt:robotoFont="regular" />
+                <FrameLayout android:id="@id/header_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="@dimen/item_large_spacing" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/sub_header_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/separator" android:background="@color/ytm_color_white_at_10pct" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/item_large_spacing" android:layout_marginEnd="@dimen/item_large_spacing" />
+                <FrameLayout android:id="@id/sub_header_chips" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View android:background="@drawable/queue_header_background" android:layout_width="wrap_content" android:layout_height="@dimen/queue_header_shadow_height" />
+        </LinearLayout>
+    </com.google.android.material.appbar.CollapsingToolbarLayout>
+</com.google.android.material.appbar.AppBarLayout>

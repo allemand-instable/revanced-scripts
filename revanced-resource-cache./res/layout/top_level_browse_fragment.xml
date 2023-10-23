@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:id="@id/background_image_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/background_image" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="centerCrop" android:adjustViewBounds="true" android:importantForAccessibility="no" />
+        <View android:id="@id/background_overlay_gradient" android:background="@drawable/browse_page_background_image_gradient" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/background_image" />
+        <View android:id="@id/background_scrim" android:background="@color/theme_main_window_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/background_image" android:alpha="0.0" />
+    </RelativeLayout>
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" yt:layout_scrollFlags="enterAlways|scroll" />
+        <RelativeLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:tabGravity="fill" yt:tabIndicatorColor="@color/ytm_color_control_active" yt:tabIndicatorHeight="@dimen/tabs_highlight_height" yt:tabMaxWidth="0.0dip" yt:tabMode="fixed" yt:tabSelectedTextColor="#ffe1e1e1" yt:tabTextColor="#99e1e1e1" />
+        <include android:id="@id/toolbar_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@id/browse_content" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@id/tabbed_view" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:deselectedIconAlpha="0.6" yt:tabHeaderBackground="?tabHeaderColor" />
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" yt:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" yt:titleTextAppearance="@style/Theme.YouTubeMusic.Toolbar.TitleText">
+            <ImageView android:layout_gravity="center" android:id="@id/centered_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        </com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar>
+        <include android:id="@id/toolbar_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@id/browse_content" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:layout_behavior="com.google.android.apps.youtube.music.browse.BrowseUnlimitedFragmentScrollingViewBehavior">
+        <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@id/tabbed_view" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:deselectedIconAlpha="0.6" yt:tabHeaderBackground="?tabHeaderColor" />
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

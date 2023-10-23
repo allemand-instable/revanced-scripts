@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="@dimen/item_extra_small_spacing" android:insetBottom="@dimen/item_extra_small_spacing"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle">
+        <corners android:radius="?actionBarSize" />
+        <padding android:left="@dimen/action_bar_icon_padding" android:top="@dimen/abc_button_padding_vertical_material" android:right="@dimen/remix_generic_button_size" android:bottom="@dimen/abc_button_padding_vertical_material" />
+        <solid android:color="@color/ytm_color_white_at_10pct" />
+    </shape>
+</inset>

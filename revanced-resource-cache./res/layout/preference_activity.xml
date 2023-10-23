@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar android:id="@id/toolbar" android:background="@color/ytm_theme_main_color_dark" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationContentDescription="@string/navigate_back" app:navigationIcon="@drawable/yt_outline_arrow_left_white_24" />
+    </com.google.android.material.appbar.AppBarLayout>
+</LinearLayout>

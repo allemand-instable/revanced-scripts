@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/avatar_menu_container" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" yt:elevation="0.0dip">
+        <com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar android:id="@id/toolbar" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:contentDescription="@string/account" yt:navigationContentDescription="@string/accessibility_close" yt:navigationIcon="@drawable/yt_outline_x_mark_vd_theme_24" yt:title="@string/account" yt:titleTextAppearance="@style/Theme.YouTubeMusic.Toolbar.TitleText" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/guide_content" android:background="?colorPrimary" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/active_account_header_container" android:background="@color/ytm_color_black" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <com.google.android.apps.youtube.music.ui.avatarmenu.AccountHeaderView android:gravity="center_vertical" android:orientation="vertical" android:id="@id/account_header" android:paddingTop="@dimen/item_extra_large_spacing" android:paddingBottom="@dimen/item_extra_large_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/account_header_padding" android:paddingEnd="@dimen/account_header_padding" />
+            <TextView android:textColor="@color/ytm_text_color_primary" android:id="@id/unlimited_moniker" android:paddingLeft="@dimen/item_large_spacing" android:paddingTop="@dimen/item_medium_spacing" android:paddingRight="@dimen/item_large_spacing" android:paddingBottom="@dimen/item_medium_spacing" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" android:textAlignment="viewStart" android:paddingStart="@dimen/item_large_spacing" android:paddingEnd="@dimen/item_large_spacing" />
+            <View android:layout_gravity="fill_horizontal" android:background="@color/ytm_color_white_at_10pct" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/guide_entries" android:background="@color/ytm_color_black" android:paddingTop="@dimen/item_small_spacing" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+            <com.google.android.apps.youtube.music.ui.avatarmenu.PrivacyTosFooter android:id="@id/privacy_tos_footer" android:background="@color/ytm_color_black" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:id="@id/unlimited_panel" android:background="@color/ytm_color_black" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/medium_font_size" android:gravity="start" android:id="@id/upgrade_unlimited_subtitle" android:padding="12.0dip" android:focusable="true" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@id/upgrade_unlimited_button" android:background="@color/yt_medium_red" android:paddingTop="12.0dip" android:paddingBottom="12.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/medium_font_size" android:textColor="?android:textColorPrimary" android:gravity="center" android:layout_gravity="center" android:id="@id/upgrade_unlimited_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAllCaps="true" />
+                </FrameLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

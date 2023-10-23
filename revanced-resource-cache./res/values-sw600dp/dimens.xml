@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_content_inset_material">24.0dip</dimen>
+    <dimen name="abc_action_bar_content_inset_with_nav">80.0dip</dimen>
+    <dimen name="abc_action_bar_default_height_material">64.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_end_material">8.0dip</dimen>
+    <dimen name="abc_action_bar_default_padding_start_material">8.0dip</dimen>
+    <dimen name="abc_config_prefDialogWidth">580.0dip</dimen>
+    <dimen name="design_navigation_max_width">320.0dip</dimen>
+    <dimen name="design_snackbar_action_inline_max_width">0.0dip</dimen>
+    <dimen name="design_snackbar_background_corner_radius">2.0dip</dimen>
+    <dimen name="design_snackbar_extra_spacing_horizontal">24.0dip</dimen>
+    <dimen name="design_snackbar_max_width">576.0dip</dimen>
+    <dimen name="design_snackbar_min_width">320.0dip</dimen>
+    <item type="dimen" name="design_snackbar_padding_vertical_2lines">@dimen/design_snackbar_padding_vertical</item>
+    <dimen name="design_tab_scrollable_min_width">160.0dip</dimen>
+    <dimen name="extra_extra_small_font_size">12.0sp</dimen>
+    <dimen name="extra_large_font_size">24.0sp</dimen>
+    <dimen name="extra_small_font_size">14.0sp</dimen>
+    <dimen name="google_toolbar_text_size_subtitle">16.0dip</dimen>
+    <dimen name="google_toolbar_text_size_title">20.0dip</dimen>
+    <dimen name="innertube_menu_width_increment_dp">64.0dip</dimen>
+    <dimen name="large_font_size">21.0sp</dimen>
+    <dimen name="margin_end">12.0dip</dimen>
+    <dimen name="margin_start">12.0dip</dimen>
+    <dimen name="medium_font_size">18.0sp</dimen>
+    <dimen name="message_renderer_padding">64.0dip</dimen>
+    <item type="dimen" name="mr_dialog_fixed_width_major">60.000004%</item>
+    <item type="dimen" name="mr_dialog_fixed_width_minor">90.0%</item>
+    <dimen name="mtrl_bottomappbar_height">64.0dip</dimen>
+    <dimen name="mtrl_toolbar_default_height">64.0dip</dimen>
+    <item type="dimen" name="music_entity_title_view_size">@dimen/layout_match_parent</item>
+    <dimen name="music_selfselect_promo_button_padding_end">12.0dip</dimen>
+    <dimen name="music_selfselect_promo_button_padding_top">24.0dip</dimen>
+    <dimen name="music_selfselect_promo_image_margin_bottom">36.0dip</dimen>
+    <dimen name="music_selfselect_promo_image_margin_end">90.0dip</dimen>
+    <dimen name="music_selfselect_promo_image_margin_start">90.0dip</dimen>
+    <dimen name="music_selfselect_promo_image_margin_top">46.0dip</dimen>
+    <dimen name="music_selfselect_promo_image_size">50.0dip</dimen>
+    <dimen name="music_selfselect_promo_item_padding">18.0dip</dimen>
+    <dimen name="music_selfselect_promo_padding_end">16.0dip</dimen>
+    <dimen name="music_selfselect_promo_padding_start">32.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_body_min_height">92.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_body_text_size">24.0sp</dimen>
+    <dimen name="onboarding_interstitial_promo_buttons_bottom_margin">50.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_foreground_image_height_width">84.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_scrollview_bottom_margin">160.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_title_text_size">30.0sp</dimen>
+    <dimen name="player_container_text_size">14.0sp</dimen>
+    <dimen name="remote_connection_pending_height_no_metadata">162.0dip</dimen>
+    <dimen name="simple_text_section_padding_vulcan">24.0dip</dimen>
+    <dimen name="small_font_size">16.0sp</dimen>
+    <dimen name="survey_side_padding">8.0dip</dimen>
+    <dimen name="unlimited_header_description_margin">10.0dip</dimen>
+    <dimen name="unlimited_header_logo_height">88.0dip</dimen>
+    <dimen name="unlimited_header_logo_margin">10.0dip</dimen>
+    <dimen name="unlimited_header_logo_width">600.0dip</dimen>
+    <dimen name="unlimited_header_text_margin">10.0dip</dimen>
+    <dimen name="upsell_dialog_width">400.0dip</dimen>
+    <dimen name="watch_while_mini_player_height_short_stack">72.0dip</dimen>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <gradient android:startColor="@color/yt_black_pure_opacity10" android:endColor="@color/yt_black_pure_opacity5" android:angle="90.0" />
+    <corners android:radius="@dimen/ghost_card_corner_radius" />
+</shape>

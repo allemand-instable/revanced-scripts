@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:titleTextAppearance="@style/Theme.YouTubeMusic.Toolbar.TitleText" />
+        <RelativeLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <include android:id="@id/toolbar_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@id/browse_content" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:orientation="vertical" android:id="@id/tabbed_view_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@id/tabbed_view" android:background="@null" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" app:deselectedIconAlpha="0.6" app:tabHeaderBackground="?tabHeaderColor" />
+        </LinearLayout>
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton android:theme="@style/Theme.MaterialComponents.DayNight" android:layout_gravity="end|bottom|center" android:id="@id/floating_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/item_extra_extra_large_spacing" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" android:backgroundTint="@color/ytm_color_white" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

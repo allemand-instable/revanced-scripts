@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="@dimen/tastebuilder_item_width" android:layout_height="@dimen/tastebuilder_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/thumbnail_container" android:background="?selectableItemBackgroundBorderless" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/tastebuilder_item_thumbnail_margin_vertical" android:layout_marginBottom="@dimen/tastebuilder_item_thumbnail_margin_vertical">
+        <com.google.android.libraries.youtube.common.ui.CircularImageView android:id="@id/thumbnail" android:layout_width="@dimen/tastebuilder_artist_thumbnail_size" android:layout_height="@dimen/tastebuilder_artist_thumbnail_size" android:scaleType="fitCenter" />
+        <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="@dimen/tastebuilder_item_icon_width" android:layout_height="@dimen/tastebuilder_item_icon_height" android:contentDescription="@null" />
+    </FrameLayout>
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/tastebuilder_item_title_text_size" android:textColor="@android:color/white" android:gravity="center|top" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="@dimen/tastebuilder_item_title_text_height" android:maxLines="2" yt:robotoFont="medium" />
+</LinearLayout>

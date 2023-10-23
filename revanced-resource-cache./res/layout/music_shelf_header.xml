@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/music_shelf_header" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:minHeight="@dimen/header_min_height">
+        <LinearLayout android:orientation="vertical" android:id="@id/title_container" android:paddingTop="@dimen/header_vertical_padding" android:paddingBottom="@dimen/header_vertical_padding" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:paddingStart="@dimen/header_horizontal_padding" android:paddingEnd="@dimen/header_horizontal_padding">
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Subtitle1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/shelf_strapline" android:paddingBottom="@dimen/header_text_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:includeFontPadding="false" android:drawablePadding="@dimen/header_image_spacing" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display1" android:ellipsize="end" android:gravity="start|center" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:drawablePadding="@dimen/header_image_spacing" android:textAlignment="viewStart" />
+            <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Subtitle1" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/shelf_subtitle" android:paddingTop="@dimen/header_text_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:includeFontPadding="false" android:drawablePadding="@dimen/header_image_spacing" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/icon_links" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingEnd="@dimen/header_horizontal_padding" />
+        <include android:id="@id/contextual_menu_anchor" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/contextual_menu_anchor" />
+    </LinearLayout>
+    <include android:id="@id/divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider" />
+</LinearLayout>

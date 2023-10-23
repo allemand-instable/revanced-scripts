@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap android:src="@drawable/yt_outline_chromecast_white_24" android:alpha="0.3" />
+    </item>
+    <item android:drawable="@drawable/yt_outline_chromecast_animate_frame_1_white_24" />
+</layer-list>

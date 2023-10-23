@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/background_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <android.support.v7.widget.Toolbar android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentStart="true">
+        <android.support.v7.widget.AppCompatImageView android:id="@id/back_button" android:layout_width="@dimen/close_button_size" android:layout_height="@dimen/close_button_size" android:contentDescription="@string/accessibility_close" app:srcCompat="@drawable/yt_outline_x_mark_vd_theme_24" app:tint="@color/ytm_color_white" />
+    </android.support.v7.widget.Toolbar>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/voice_tips_or_dialog_frame" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <include android:id="@id/listening_voice_tips_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/microphone_top_spacing" android:layout_marginBottom="@dimen/microphone_bottom_spacing" layout="@layout/voice_listening_view_layout" />
+            <FrameLayout android:id="@id/voice_dialog_frame" android:paddingBottom="@dimen/item_extra_extra_large_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/microphone_top_spacing" />
+        </FrameLayout>
+        <include android:id="@id/microphone_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" layout="@layout/microphone_view_layout" />
+    </RelativeLayout>
+</RelativeLayout>

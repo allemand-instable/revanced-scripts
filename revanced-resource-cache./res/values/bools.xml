@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="abc_action_bar_embed_tabs">true</bool>
+    <bool name="annonations_banner_ads_show_thumbnail">true</bool>
+    <bool name="config_materialPreferenceIconSpaceReserved">false</bool>
+    <bool name="enable_freeform_appwidget">false</bool>
+    <bool name="enable_package_replaced_receiver">true</bool>
+    <bool name="enable_srp_3col_tab_labels">false</bool>
+    <bool name="enable_srp_6col_list">false</bool>
+    <bool name="enable_srp_card_shelf_thumbnail_to_the_side">false</bool>
+    <bool name="enable_srp_centered_chip_cloud">false</bool>
+    <bool name="enable_srp_split_presentation">false</bool>
+    <bool name="enable_system_alarm_service_default">false</bool>
+    <bool name="enable_system_foreground_service_default">true</bool>
+    <bool name="enable_system_job_service_default">true</bool>
+    <bool name="gm_sys_typescale_body1_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_body2_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_button_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_caption_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_display1_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_display2_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_display3_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_headline1_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_headline2_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_headline3_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_headline4_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_headline5_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_headline6_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_overline_text_all_caps">true</bool>
+    <bool name="gm_sys_typescale_subhead1_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_subhead2_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_subtitle1_text_all_caps">false</bool>
+    <bool name="gm_sys_typescale_subtitle2_text_all_caps">false</bool>
+    <bool name="is_tablet">false</bool>
+    <bool name="workmanager_test_configuration">false</bool>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="desired_page_padding">64.0dip</dimen>
+    <dimen name="music_card_shelf_undercard_vertical_padding">16.0dip</dimen>
+    <dimen name="page_padding">48.0dip</dimen>
+</resources>

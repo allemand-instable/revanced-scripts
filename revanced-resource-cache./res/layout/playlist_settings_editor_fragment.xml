@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:id="@id/coordinator_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+        <com.google.android.apps.youtube.music.ui.appchrome.insets.InsetAdjustingToolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" app:navigationIcon="@drawable/yt_outline_arrow_left_white_24" app:titleTextAppearance="@style/Theme.YouTubeMusic.Toolbar.TitleText" />
+        <include android:id="@id/toolbar_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <android.support.v7.widget.RecyclerView android:id="@id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

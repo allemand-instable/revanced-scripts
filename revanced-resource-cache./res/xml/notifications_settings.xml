@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.youtube.music.ui.preference.PreferenceCategoryCompat android:persistent="false" android:key="pref_key_settings_general">
+        <com.google.android.apps.youtube.music.ui.preference.PreferenceCategoryCompat android:persistent="false" android:orderingFromXml="true" android:key="pref_key_settings_notification" />
+    </com.google.android.apps.youtube.music.ui.preference.PreferenceCategoryCompat>
+</PreferenceScreen>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView android:id="@id/card_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="0.0dip">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/swipeable_mini_player_thumbnail" android:layout_width="@dimen/mini_player_watch_fragment_length" android:layout_height="@dimen/mini_player_watch_fragment_length" android:importantForAccessibility="no" android:layout_marginStart="@dimen/item_large_spacing" android:layout_marginEnd="@dimen/item_large_spacing" />
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textColor="@color/ytm_color_white" android:id="@id/swipeable_mini_player_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scrollHorizontally="true" android:singleLine="true" android:marqueeRepeatLimit="marquee_forever" android:textAlignment="viewStart" style="@style/YtmTitle02" />
+                <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textColor="@color/ytm_text_color_secondary_translucent" android:id="@id/swipeable_mini_player_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" style="@style/YtmSubtitle01" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</FrameLayout>

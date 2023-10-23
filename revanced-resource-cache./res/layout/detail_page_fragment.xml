@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/detail_page_app_bar" android:background="@color/music_full_transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:stateListAnimator="@null" android:outlineProvider="none" yt:layout_behavior="com.google.android.apps.youtube.music.ui.appchrome.appbar.MusicAppBarBehavior">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@id/detail_page_collapsing_toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:layout_scrollFlags="exitUntilCollapsed|scroll" yt:titleEnabled="false">
+            <com.google.android.apps.youtube.music.ui.components.toolbar.TouchPassThroughToolbar android:theme="@style/ToolbarMenuItemStyle" android:id="@id/detail_page_toolbar" android:paddingTop="1.0px" android:layout_width="fill_parent" android:layout_height="?actionBarSize" android:layout_marginTop="-1.0px" android:paddingEnd="@dimen/item_extra_small_spacing" yt:layout_collapseMode="pin" yt:navigationIcon="@drawable/yt_outline_arrow_left_white_24">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title" android:ellipsize="end" android:gravity="start|center" android:id="@id/title_place_holder" android:focusable="true" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxLines="1" android:layout_centerVertical="true" android:textAlignment="viewStart" android:layout_toStartOf="@id/menu_layout" android:layout_alignParentStart="true" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/menu_layout" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+                        <android.support.v7.widget.RecyclerView android:id="@id/toolbar_top_level_menu_buttons_anchor" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+                        <include android:layout_gravity="center_vertical" android:id="@id/toolbar_contextual_menu_anchor" android:padding="@dimen/item_medium_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/contextual_menu_anchor" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </com.google.android.apps.youtube.music.ui.components.toolbar.TouchPassThroughToolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+        <RelativeLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:layout_scrollFlags="enterAlways|scroll|snap" />
+        <include android:id="@id/toolbar_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar_divider" />
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/content_container" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <ScrollView android:id="@id/landscape_header_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="fill_parent" yt:layout_constraintStart_toStartOf="parent" yt:layout_constraintTop_toTopOf="parent" yt:layout_constraintWidth_percent="0.4" />
+        <com.google.android.apps.youtube.music.ui.refresh.MusicSwipeRefreshLayout android:id="@id/swipe_to_refresh_layout" android:background="@color/theme_main_window_background" android:layout_width="0.0dip" android:layout_height="fill_parent" yt:layout_behavior="@string/appbar_scrolling_view_behavior" yt:layout_constraintEnd_toEndOf="parent" yt:layout_constraintStart_toEndOf="@id/landscape_header_container">
+            <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@id/results_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/results_list" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                <com.google.android.libraries.quantum.fab.FloatingActionButton android:layout_gravity="end|bottom|center" android:id="@id/floating_action_button" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:tint="@color/ytm_black4" android:contentDescription="@null" />
+            </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+        </com.google.android.apps.youtube.music.ui.refresh.MusicSwipeRefreshLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

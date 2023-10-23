@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="carousel_num_medium_items_visible">4</integer>
+    <integer name="grid_shelf_num_columns">2</integer>
+</resources>

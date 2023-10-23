@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_0_white_24" />
+    </item>
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_1_white_24" />
+    </item>
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_2_white_24" />
+    </item>
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_3_white_24" />
+    </item>
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_4_white_24" />
+    </item>
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_5_white_24" />
+    </item>
+    <item android:duration="120">
+        <bitmap android:src="@drawable/yt_outline_downloading_6_white_24" />
+    </item>
+</animation-list>

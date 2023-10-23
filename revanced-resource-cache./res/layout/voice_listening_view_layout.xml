@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="start" android:paddingBottom="@dimen/item_extra_extra_large_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/item_extra_extra_large_spacing" android:paddingEnd="@dimen/item_extra_extra_large_spacing">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmDisplay01" android:id="@id/state_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/item_extra_extra_large_spacing" android:text="@string/listening" android:maxLines="2" />
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmSubtitle01" android:id="@id/error_voice_tips" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="10" android:layout_below="@id/state_text_view" />
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmDisplay01" android:id="@id/stable_recognized_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmDisplay01" android:textColor="@color/ytm_color_text_02" android:id="@id/unstable_recognized_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toEndOf="@id/stable_recognized_text" />
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmDisplay01" android:textColor="@color/ytm_color_text_02" android:gravity="start" android:id="@id/conversation_answer_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:maxLines="7" android:layout_below="@id/stable_recognized_text" android:layout_marginStart="48.0dip" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/voice_tips_size" android:textColor="@color/ytm_color_text_02" android:gravity="center_horizontal" android:id="@id/listening_voice_tips_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</FrameLayout>

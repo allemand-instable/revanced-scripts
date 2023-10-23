@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:gravity="center" android:id="@id/music_play_button" android:clickable="false" android:layout_width="@dimen/music_play_button_icon_size" android:layout_height="@dimen/music_play_button_icon_size"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" />
+    <com.google.android.apps.youtube.music.player.indicator.RoundedPlayingIndicatorView android:id="@id/now_playing_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <com.google.android.apps.youtube.music.player.indicator.PlayingIndicatorView android:id="@id/equalizer_indicator" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</FrameLayout>

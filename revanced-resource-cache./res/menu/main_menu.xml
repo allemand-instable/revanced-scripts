@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/yt_outline_arrow_time_vd_theme_24" android:id="@id/history_menu_item" android:visible="false" android:orderInCategory="2" android:title="@string/title_history_new" yt:showAsAction="always" />
+    <item android:id="@id/media_route_menu_item" android:visible="true" android:orderInCategory="2" android:title="@string/media_route_menu_title" android:actionProviderClass="com.google.android.apps.youtube.music.player.mdx.MusicMediaRouteActionProvider" yt:actionProviderClass="com.google.android.apps.youtube.music.player.mdx.MusicMediaRouteActionProvider" yt:showAsAction="always" />
+    <item android:icon="@drawable/yt_outline_gear_white_24" android:id="@id/offline_settings_menu_item" android:visible="false" android:orderInCategory="2" android:title="@string/offline_mixtape_storage_settings" yt:showAsAction="always" />
+    <item android:id="@id/action_search" android:orderInCategory="2" android:title="@string/search" android:actionProviderClass="com.google.android.apps.youtube.music.search.SearchActionProvider" yt:actionProviderClass="com.google.android.apps.youtube.music.search.SearchActionProvider" yt:showAsAction="always" />
+    <item android:id="@id/action_avatar" android:orderInCategory="2" android:title="@string/account" android:actionProviderClass="com.google.android.apps.youtube.music.ui.avatarmenu.AvatarActionProvider" yt:actionProviderClass="com.google.android.apps.youtube.music.ui.avatarmenu.AvatarActionProvider" yt:showAsAction="always" />
+</menu>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="chip_cloud_chip_text_padding">16.0dip</dimen>
+    <dimen name="chip_cloud_chip_text_size">16.0sp</dimen>
+    <dimen name="cloud_chip_button_min_width">40.0dip</dimen>
+    <dimen name="cloud_chip_height">40.0dip</dimen>
+    <dimen name="desired_page_padding">48.0dip</dimen>
+    <dimen name="list_item_title_text_size">16.0sp</dimen>
+    <dimen name="music_card_shelf_undercard_vertical_padding">8.0dip</dimen>
+    <dimen name="music_entity_thumbnail_size">164.0dip</dimen>
+    <dimen name="page_padding">32.0dip</dimen>
+    <dimen name="sort_filter_spinner_margin">18.0dip</dimen>
+</resources>

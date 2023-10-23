@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:id="@id/text_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:id="@id/image_button" android:background="@drawable/ripple" android:paddingTop="@dimen/item_medium_spacing" android:paddingBottom="@dimen/item_medium_spacing" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" android:paddingStart="@dimen/item_large_spacing" android:paddingEnd="@dimen/item_large_spacing" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="google_toolbar_text_size_subtitle">12.0dip</dimen>
+    <dimen name="google_toolbar_text_size_title">14.0dip</dimen>
+    <dimen name="mr_controller_volume_group_list_item_height">61.0dip</dimen>
+    <dimen name="mr_controller_volume_group_list_item_icon_size">18.0dip</dimen>
+    <dimen name="mr_controller_volume_group_list_max_height">132.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_bottom">24.0dip</dimen>
+    <dimen name="mtrl_alert_dialog_background_inset_top">24.0dip</dimen>
+    <dimen name="mtrl_calendar_header_height_fullscreen">96.0dip</dimen>
+    <item type="dimen" name="music_entity_header_bottom_margin">@dimen/item_large_spacing</item>
+    <dimen name="music_entity_thumbnail_size">131.0dip</dimen>
+    <item type="dimen" name="music_entity_title_view_size">@dimen/layout_match_parent</item>
+    <dimen name="onboarding_interstitial_promo_body_min_height">68.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_body_text_size">18.0sp</dimen>
+    <dimen name="onboarding_interstitial_promo_buttons_bottom_margin">42.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_max_content_width">500.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_scrollview_bottom_margin">100.0dip</dimen>
+    <dimen name="onboarding_interstitial_promo_title_text_size">20.0sp</dimen>
+    <dimen name="share_panel_peek_amount">36.0dip</dimen>
+    <dimen name="unlimited_header_description_margin">10.0dip</dimen>
+    <dimen name="unlimited_header_logo_height">44.0dip</dimen>
+    <dimen name="unlimited_header_logo_margin">10.0dip</dimen>
+    <dimen name="unlimited_header_logo_width">300.0dip</dimen>
+    <dimen name="unlimited_header_text_margin">10.0dip</dimen>
+</resources>

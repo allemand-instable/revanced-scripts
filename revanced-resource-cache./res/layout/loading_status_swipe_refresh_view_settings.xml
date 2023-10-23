@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout android:id="@id/error_swipe_to_retry_layout" android:visibility="gone" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/medium_font_size" android:textColor="@color/quantum_black_100" android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/error_message_text" android:padding="@dimen/item_large_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableTop="@drawable/yt_outline_cloud_off_black_48" android:drawablePadding="@dimen/item_extra_large_spacing" android:alpha="@dimen/message_renderer_alpha" android:textAlignment="viewStart" yt:robotoFont="medium" />
+    </FrameLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

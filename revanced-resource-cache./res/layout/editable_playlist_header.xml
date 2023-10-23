@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/playlist_detail_page_header" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/music_element_header" />
+    <include android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/detail_page_header" />
+    <include android:orientation="vertical" android:id="@id/edit_header_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="?actionBarSize" layout="@layout/playlist_edit_metadata" />
+</FrameLayout>

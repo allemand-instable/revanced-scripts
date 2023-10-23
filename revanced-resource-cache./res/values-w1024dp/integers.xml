@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="carousel_num_extra_small_items_visible">8</integer>
+    <integer name="carousel_num_medium_items_visible">6</integer>
+    <integer name="carousel_num_small_items_visible">8</integer>
+    <integer name="long_text_description_shelf_width_cols">8</integer>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.youtube.common.ui.AccessibilityLayerLayout android:id="@id/accessibility_layer_container" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:backgroundViewId="@id/main_layout_wrapper"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <fragment android:name="com.google.android.apps.youtube.music.util.foreground.ForegroundDetectionFragment" android:id="@id/foreground_detection_fragment" android:layout_width="1.0dip" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/main_layout_wrapper" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:id="@id/waze_bar_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/watch_while_layout_wrapper" android:background="?musicBackgroundColor" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ViewStub android:id="@id/stub_mpp_watch_while_layout" android:inflatedId="@id/mpp_watch_while_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <FrameLayout android:id="@id/survey_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            <androidx.coordinatorlayout.widget.CoordinatorLayout android:layout_gravity="bottom" android:id="@id/floating_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <include layout="@layout/pivot_bar" />
+        </FrameLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@id/interstitials_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/engagement_panel_layout" />
+</com.google.android.libraries.youtube.common.ui.AccessibilityLayerLayout>

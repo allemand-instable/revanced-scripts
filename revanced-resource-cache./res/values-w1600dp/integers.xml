@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="carousel_num_extra_small_items_visible">12</integer>
+    <integer name="carousel_num_two_column_items_visible">3</integer>
+    <integer name="carousel_num_video_only_items_visible">4</integer>
+</resources>

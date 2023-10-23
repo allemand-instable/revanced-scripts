@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.youtube.music.watchpage.mpp.MppPlayerBottomSheet android:orientation="vertical" android:id="@id/mpp_player_bottom_sheet" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:behavior_hideable="false" yt:dragHandleId="@id/bottom_sheet_drag_handle" yt:layout_behavior="com.google.android.apps.youtube.music.watchpage.mpp.MppPlayerPageBehavior" yt:tabbedViewId="@id/bottom_sheet_tabbed_view"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/bottom_sheet_drag_handle" android:paddingTop="@dimen/item_small_spacing" android:paddingBottom="@dimen/item_extra_small_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/single_bar_drag_handle" android:tint="@color/ytm_color_white" android:contentDescription="@string/drag_handle_content_description" android:alpha="0.3" />
+    <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@id/bottom_sheet_tabbed_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</com.google.android.apps.youtube.music.watchpage.mpp.MppPlayerBottomSheet>

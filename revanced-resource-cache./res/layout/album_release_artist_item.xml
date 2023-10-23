@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/item_large_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.libraries.youtube.common.ui.CircularImageView android:id="@id/artist_avatar" android:background="@color/theme_main_window_background" android:layout_width="@dimen/music_icon_size" android:layout_height="@dimen/music_icon_size" android:contentDescription="@null" android:layout_marginEnd="@dimen/item_large_spacing" />
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textColor="?android:textColorPrimary" android:ellipsize="end" android:id="@id/artist_display" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" android:paddingEnd="@dimen/music_generic_button_size" android:layout_marginEnd="@dimen/item_large_spacing" yt:robotoFont="medium" />
+</LinearLayout>

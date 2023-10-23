@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/frame_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/header_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <include android:visibility="gone" layout="@layout/music_card_default_container" />
+    <include android:visibility="gone" layout="@layout/music_card_thumbnail_to_the_side_container" />
+    <include android:visibility="gone" layout="@layout/music_card_thumbnail_above_container" />
+    <android.support.v7.widget.RecyclerView android:id="@id/undercard_contents" android:background="@drawable/search_card_undercard_background" android:visibility="gone" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/two_column_item_horizontal_padding" android:layout_marginRight="@dimen/two_column_item_horizontal_padding" android:nestedScrollingEnabled="false" android:layout_marginHorizontal="@dimen/two_column_item_horizontal_padding" />
+    <FrameLayout android:id="@id/shelf_divider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/shelf_divider_large_height" />
+</LinearLayout>

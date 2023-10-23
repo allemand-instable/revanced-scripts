@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/immersive_browse_fragment" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout android:id="@id/browse_content" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <com.google.android.apps.youtube.music.player.immersive.MusicImmersivePlayerView android:id="@id/music_immersive_player" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/paused_frame" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" android:contentDescription="@null" />
+        <com.google.android.apps.youtube.music.ui.tabs.TabbedView android:id="@id/tabbed_view" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" yt:deselectedIconAlpha="0.6" yt:tabHeaderBackground="?tabHeaderColor" />
+    </com.google.android.apps.youtube.music.ui.components.loading.LoadingFrameLayout>
+    <View android:id="@id/touch_capture" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.material.appbar.AppBarLayout android:id="@id/app_bar" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="?actionBarSize" yt:layout_scrollFlags="enterAlways|scroll" />
+    </com.google.android.material.appbar.AppBarLayout>
+</FrameLayout>

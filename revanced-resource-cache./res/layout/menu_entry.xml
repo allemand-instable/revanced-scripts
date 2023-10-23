@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="?defaultItemSelector" android:layout_width="fill_parent" android:layout_height="@dimen/guide_entry_height"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/thumbnail" android:layout_width="@dimen/guide_thumbnail_size" android:layout_height="@dimen/guide_thumbnail_size" android:layout_marginLeft="@dimen/guide_thumbnail_side_spacing" android:layout_marginRight="@dimen/guide_thumbnail_side_spacing" android:contentDescription="@null" android:layout_marginStart="@dimen/guide_thumbnail_side_spacing" android:layout_marginEnd="@dimen/guide_thumbnail_side_spacing" />
+    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textColor="@color/ytm_text_color_primary" android:ellipsize="end" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" android:textAlignment="viewStart" yt:robotoFont="medium" />
+</LinearLayout>
