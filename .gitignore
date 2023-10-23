@@ -11,3 +11,4 @@ options*
 package-lock.json
 *.apk*
 revanced-cache*
+**/*.bak

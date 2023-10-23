@@ -34,3 +34,19 @@ integrations_script_version_var="$( sed -n "3p" youtube.zsh | tr '-' '\n' | sed 
 echo "CLI           : [github] ${cli_version_var} — ${cli_script_version_var} [script]"
 echo "Patches       : [github] ${patches_version_var} — ${patches_script_version_var} [script]"
 echo "Integrations  : [github] ${integrations_version_var} — ${integrations_script_version_var} [script]"
+
+echo "\n——————————————————\n"
+
+if [[ "$cli_version_var" == "$cli_script_version_var" ]]; then
+    echo "cli ok"
+fi
+if [[ "$patches_version_var" == "$patches_script_version_var" ]]; then
+    echo "patches ok"
+    else
+    echo "patches outdated"
+fi
+if [[ "$integrations_version_var" == "$integrations_script_version_var" ]]; then
+    echo "integrations ok"
+    else
+    echo "integrations outdated"
+fi
