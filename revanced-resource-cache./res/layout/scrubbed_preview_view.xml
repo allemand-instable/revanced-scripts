@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.libraries.youtube.player.features.storyboard.ScrubbedPreviewView android:id="@id/scrubbed_preview_view" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" />

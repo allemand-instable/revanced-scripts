@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/create_entry" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.libraries.youtube.common.ui.YouTubeButton android:gravity="center" android:layout_gravity="center" android:id="@id/create_button" android:layout_width="wrap_content" android:layout_height="@dimen/add_to_playlist_dialog_add_button_height" android:layout_marginLeft="@dimen/item_extra_extra_large_spacing" android:layout_marginTop="@dimen/item_small_medium_spacing" android:layout_marginRight="@dimen/item_extra_extra_large_spacing" android:layout_marginBottom="@dimen/item_small_medium_spacing" android:maxLines="1" android:drawablePadding="@dimen/item_small_spacing" android:layout_marginHorizontal="@dimen/item_extra_extra_large_spacing" android:layout_marginVertical="@dimen/item_small_medium_spacing" />
-</LinearLayout>

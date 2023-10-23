@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="carousel_num_medium_items_visible">4</integer>
-    <integer name="migration_transfer_page_num_thumbnails">6</integer>
-</resources>

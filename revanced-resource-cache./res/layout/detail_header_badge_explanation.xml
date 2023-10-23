@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/detail_header_badge_explanation" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/item_large_spacing" android:layout_marginStart="@dimen/item_large_spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/badge_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:layout_gravity="center_vertical" android:id="@id/badge_explanation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/item_extra_small_spacing" style="@style/TextAppearance.YouTubeMusic.Body3" />
-</LinearLayout>

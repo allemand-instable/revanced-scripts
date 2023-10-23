@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item type="dimen" name="chip_cloud_page_padding">@dimen/desired_page_padding</item>
-    <dimen name="desired_page_padding">20.0dip</dimen>
-    <dimen name="page_padding">4.0dip</dimen>
-</resources>

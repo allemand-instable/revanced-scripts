@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <androidx.cardview.widget.CardView android:id="@id/card_view_container" android:layout_width="fill_parent" android:layout_height="fill_parent" app:cardBackgroundColor="@android:color/transparent" app:cardElevation="0.0dip">
-        <com.google.android.libraries.youtube.common.ui.FixedAspectRatioFrameLayout android:layout_gravity="center" android:id="@id/swipeable_thumbnail_aspect_ratio_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
-            <ImageView android:id="@id/swipeable_thumbnail" android:layout_width="fill_parent" android:layout_height="fill_parent" android:importantForAccessibility="no" />
-        </com.google.android.libraries.youtube.common.ui.FixedAspectRatioFrameLayout>
-    </androidx.cardview.widget.CardView>
-</FrameLayout>

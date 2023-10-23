@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <View android:id="@id/line" android:background="@color/music_shelf_divider_white_15" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginStart="@dimen/item_large_spacing" android:layout_marginEnd="@dimen/item_large_spacing" />
-</FrameLayout>

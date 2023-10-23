@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<menu
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <item android:id="@id/media_route_menu_item" android:visible="true" android:title="@string/media_route_menu_title" android:actionProviderClass="com.google.android.apps.youtube.music.player.mdx.MusicMediaRouteActionProvider" yt:actionProviderClass="com.google.android.apps.youtube.music.player.mdx.MusicMediaRouteActionProvider" yt:showAsAction="always" />
-    <item android:icon="@drawable/yt_outline_search_white_24" android:id="@id/action_search" android:title="@string/search" android:actionProviderClass="com.google.android.apps.youtube.music.search.SearchActionProvider" yt:actionProviderClass="com.google.android.apps.youtube.music.search.SearchActionProvider" yt:showAsAction="always" />
-    <item android:id="@id/done_editing" android:visible="false" android:title="@string/menu_editing_done" yt:showAsAction="always|withText" />
-</menu>

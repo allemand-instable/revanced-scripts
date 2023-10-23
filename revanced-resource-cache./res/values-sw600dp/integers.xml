@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <integer name="carousel_num_large_items_visible">2</integer>
-    <integer name="carousel_num_medium_items_visible">3</integer>
-    <integer name="design_snackbar_text_max_lines">1</integer>
-    <integer name="migration_transfer_page_num_thumbnails">5</integer>
-    <integer name="music_entity_thumbnail_weight">0</integer>
-</resources>

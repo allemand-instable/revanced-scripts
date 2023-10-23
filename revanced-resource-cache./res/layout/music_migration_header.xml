@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/migration_header_container" android:background="@color/ytm_color_black" android:paddingTop="@dimen/item_medium_spacing" android:paddingBottom="@dimen/item_medium_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="@dimen/item_large_spacing" android:paddingEnd="@dimen/item_large_spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Display1" android:gravity="center" android:layout_gravity="center" android:id="@id/migration_header_title" android:paddingBottom="@dimen/item_extra_large_spacing" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Reason1" android:id="@id/migration_header_byline" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/migration_header_thumbnails" android:paddingTop="@dimen/item_large_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</LinearLayout>

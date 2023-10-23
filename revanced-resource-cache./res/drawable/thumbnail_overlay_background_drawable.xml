@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<inset android:insetLeft="@dimen/item_overlay_extra_extra_small_inset" android:insetRight="@dimen/item_overlay_extra_extra_small_inset" android:insetTop="@dimen/item_overlay_extra_extra_small_inset" android:insetBottom="@dimen/item_overlay_extra_extra_small_inset"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <shape>
-        <corners android:radius="@dimen/item_extra_extra_small_spacing" />
-        <solid android:color="@color/thumbnail_overlay_background_transparent" />
-    </shape>
-</inset>

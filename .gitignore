@@ -12,3 +12,4 @@ package-lock.json
 *.apk*
 revanced-cache*
 **/*.bak
+revanced-*

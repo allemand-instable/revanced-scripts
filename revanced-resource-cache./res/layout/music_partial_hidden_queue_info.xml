@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:id="@id/partial_upsell" android:paddingTop="@dimen/partial_promo_upsell_padding_top" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Title2" android:textColor="@color/ytm_color_white" android:id="@id/partial_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/partial_promo_text_horizontal_margin" android:layout_marginRight="@dimen/partial_promo_text_horizontal_margin" />
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/YtmCaption02" android:id="@id/partial_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/partial_promo_text_horizontal_margin" android:layout_marginRight="@dimen/partial_promo_text_horizontal_margin" android:layout_marginBottom="@dimen/partial_promo_message_bottom_margin" />
-    <FrameLayout android:id="@id/partial_upgrade_button_container" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/partial_promo_button_horizontal_margin" android:layout_marginRight="@dimen/partial_promo_button_horizontal_margin" android:layout_marginBottom="@dimen/partial_promo_button_bottom_margin" android:importantForAccessibility="yes">
-        <com.google.android.libraries.youtube.common.ui.YouTubeButton android:layout_gravity="center" android:id="@id/partial_upgrade_button" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </FrameLayout>
-</LinearLayout>

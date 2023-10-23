@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <FrameLayout android:id="@id/header_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-    <android.support.v7.widget.RecyclerView android:layout_gravity="bottom" android:id="@id/carousel_content" android:paddingTop="@dimen/carousel_top_padding" android:paddingBottom="@dimen/carousel_bottom_padding_small" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/item_small_spacing" android:paddingEnd="@dimen/item_small_spacing" />
-    <com.google.android.apps.youtube.music.ui.presenter.MusicSnappyRecyclerView android:layout_gravity="bottom" android:id="@id/carousel_content_snappy" android:paddingTop="@dimen/carousel_top_padding" android:paddingBottom="@dimen/carousel_bottom_padding_small" android:visibility="gone" android:scrollbars="none" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/item_small_spacing" android:paddingEnd="@dimen/item_small_spacing" />
-</LinearLayout>

@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="vertical" android:background="@color/ytm_color_blue_01" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:id="@id/title_and_buttons_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
-        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textColor="@color/quantum_white_100" android:gravity="start" android:id="@id/title" android:paddingLeft="@dimen/item_large_spacing" android:paddingTop="@dimen/item_large_spacing" android:paddingRight="@dimen/item_large_spacing" android:paddingBottom="@dimen/item_large_spacing" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="viewStart" android:paddingStart="@dimen/item_large_spacing" android:paddingEnd="@dimen/item_large_spacing" yt:robotoFont="regular" />
-        <LinearLayout android:layout_gravity="end|center" android:orientation="horizontal" android:id="@id/button_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
-    </LinearLayout>
-    <ProgressBar android:id="@id/notification_progress_bar" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="4.0dip" android:indeterminate="true" style="@style/Widget.YouTubeMusic.ProgressBar.Horizontal" />
-</LinearLayout>

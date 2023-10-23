@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:paddingTop="@dimen/chip_cloud_padding" android:paddingBottom="@dimen/chip_cloud_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <android.support.v7.widget.RecyclerView android:id="@id/chip_cloud" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/chip_cloud_start_padding" />
-    <FrameLayout android:id="@id/search_clear_button" android:background="@drawable/clear_search_chip_background" android:focusable="true" android:visibility="gone" android:layout_width="@dimen/clear_search_icon_container_size" android:layout_height="@dimen/clear_search_icon_container_size" android:layout_centerVertical="true" android:layout_marginStart="@dimen/clear_search_icon_container_start_margin">
-        <com.google.android.libraries.youtube.common.ui.CircularImageView android:layout_gravity="center" android:id="@id/search_clear_button_icon" android:layout_width="@dimen/clear_search_icon_size" android:layout_height="@dimen/clear_search_icon_size" android:src="@drawable/yt_outline_x_mark_black_24" />
-    </FrameLayout>
-</RelativeLayout>

@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:orientation="horizontal" android:background="@color/ytm_color_grey_10" android:paddingTop="@dimen/item_medium_spacing" android:paddingBottom="@dimen/item_medium_spacing" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="@dimen/item_small_spacing" android:layout_marginEnd="@dimen/item_small_spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <RelativeLayout android:gravity="center" android:id="@id/cancel_button_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/transfer_page_button_min_width" android:layout_weight="1.0" />
-    <RelativeLayout android:gravity="center" android:id="@id/action_button_container" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:minWidth="@dimen/transfer_page_button_min_width" android:layout_weight="1.0" />
-</LinearLayout>

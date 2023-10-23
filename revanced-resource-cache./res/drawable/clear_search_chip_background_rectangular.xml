@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<shape android:layout_width="@dimen/cloud_chip_height" android:layout_height="@dimen/cloud_chip_height" android:shape="rectangle"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <corners android:radius="@dimen/chip_cloud_chip_corner_radius" />
-    <solid android:color="@color/ytm_color_white" />
-</shape>

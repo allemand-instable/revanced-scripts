@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <LinearLayout android:gravity="center" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/chip_contents" android:layout_width="fill_parent" android:layout_height="fill_parent">
-        <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/chip_cloud_chip_text_size" android:textColor="@color/ytm_color_white" android:ellipsize="end" android:gravity="center" android:layout_gravity="center" android:id="@id/chip_cloud_chip_text" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxWidth="@dimen/cloud_chip_button_max_width" android:minWidth="@dimen/cloud_chip_button_min_width" android:maxLines="1" android:layout_weight="1.0" android:textIsSelectable="false" yt:robotoFont="regular" />
-        <com.google.android.libraries.youtube.common.ui.CircularImageView android:layout_gravity="center" android:id="@id/chip_cloud_chip_cancel_icon" android:padding="0.0dip" android:visibility="gone" android:layout_width="@dimen/chip_cloud_chip_cancel_icon_size" android:layout_height="@dimen/chip_cloud_chip_cancel_icon_size" android:contentDescription="@string/cancel" />
-    </LinearLayout>
-    <com.google.android.apps.youtube.music.ui.components.chipcloud.ChipCloudChipLoadingIndicator android:id="@id/chip_cloud_chip_loading_indicator" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
-</merge>

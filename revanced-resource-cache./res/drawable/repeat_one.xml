@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<vector android:name="@id/repeat_one_button" android:height="24.0dip" android:width="24.0dip" android:viewportWidth="24.0" android:viewportHeight="24.0"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <path android:fillColor="@color/ytm_color_white" android:pathData="M4.39285 5.53571C3.64285 5.53571 2.99999 6.17857 2.99999 6.92857V11H4.71428V7.25L18.6786 7.25L16.3214 9.60715L17.5 10.7857L21.8929 6.39286L17.5 2L16.3214 3.17857L18.6786 5.53572L4.39285 5.53571Z" />
-    <path android:fillColor="@color/ytm_color_white" android:pathData="M6.49998 13.2143L2.10712 17.6071L6.49998 22L7.67855 20.8214L5.3214 18.4643L19.6071 18.3929C20.3571 18.3929 21 17.75 21 17V12.7143H19.2857V16.6786L5.3214 16.75L7.67855 14.3929L6.49998 13.2143Z" />
-    <path android:fillColor="@color/ytm_color_white" android:pathData="M13 9V15H11.5V11H10V10L12 9H13Z" />
-</vector>

@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <com.google.android.apps.youtube.music.ui.preference.ProtoDataStoreSwitchCompatPreferences android:title="@string/pref_nerd_stats_enabled" android:key="nerd_stats_enabled" android:defaultValue="false" yt:iconSpaceReserved="false" />
-</PreferenceScreen>

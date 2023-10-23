@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout android:orientation="vertical" android:paddingTop="@dimen/item_small_spacing" android:paddingBottom="@dimen/item_small_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/two_column_item_horizontal_padding" android:paddingEnd="@dimen/two_column_item_horizontal_padding"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/large_font_size" android:textColor="?android:textColorSecondary" android:id="@id/did_you_mean" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lineSpacingExtra="3.0dip" android:textAlignment="viewStart" yt:hyperlinksClickable="true" yt:robotoFont="light" />
-</FrameLayout>

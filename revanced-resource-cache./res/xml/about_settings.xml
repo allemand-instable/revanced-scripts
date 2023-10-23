@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
-    <Preference android:persistent="false" android:title="@string/settings_terms_of_service" android:key="terms_of_service" android:summary="@string/settings_read_terms_of_service" />
-    <Preference android:persistent="false" android:title="@string/open_source_licenses_title" android:key="open_source_licenses" android:summary="@string/open_source_licenses_description" />
-    <Preference android:persistent="false" android:title="@string/settings_app_version" android:key="version" app:enableCopying="true" />
-</PreferenceScreen>

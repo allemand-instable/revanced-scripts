@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_selected="true" android:drawable="@drawable/yt_fill_thumb_down_white_24" />
-    <item android:state_enabled="true" android:drawable="@drawable/yt_outline_thumb_down_white_24" />
-    <item android:state_enabled="false">
-        <bitmap android:src="@drawable/yt_outline_thumb_down_white_24" android:alpha="0.6" />
-    </item>
-</selector>

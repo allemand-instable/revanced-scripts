@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="end|center" android:orientation="horizontal" android:padding="@dimen/item_medium_spacing" android:layout_width="fill_parent" android:layout_height="fill_parent"
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textAppearance="@style/TextAppearance.YouTubeMusic.Title2" android:textColor="@color/ytm_color_grey_04" android:gravity="end|center" android:id="@id/item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="viewStart"
-      xmlns:android="http://schemas.android.com/apk/res/android" />
-</LinearLayout>

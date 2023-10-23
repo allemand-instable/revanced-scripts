@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@drawable/ripple" android:paddingTop="@dimen/item_small_spacing" android:paddingBottom="@dimen/item_small_spacing" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/item_large_spacing" android:paddingEnd="@dimen/item_large_spacing"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:id="@id/expand_button_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="@dimen/item_extra_small_spacing" yt:robotoFont="regular" />
-    <android.support.v7.widget.AppCompatImageView android:id="@id/expand_button_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:importantForAccessibility="no" yt:srcCompat="@drawable/yt_outline_chevron_down_vd_theme_24" />
-</LinearLayout>

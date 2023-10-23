@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merge
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto">
-    <com.google.android.libraries.youtube.common.ui.YouTubeTextView android:textSize="@dimen/small_font_size" android:textColor="?ytTextPrimary" android:ellipsize="end" android:gravity="center" android:id="@id/route_info_chip_text" android:layout_width="wrap_content" android:layout_height="fill_parent" android:maxWidth="@dimen/route_info_chip_button_max_width" android:minWidth="@dimen/route_info_chip_button_min_width" android:maxLines="1" android:layout_weight="1.0" android:textIsSelectable="false" yt:robotoFont="regular" />
-    <com.google.android.libraries.youtube.common.ui.CircularImageView android:layout_gravity="center" android:id="@id/route_info_chip_cancel_icon" android:visibility="gone" android:layout_width="@dimen/route_info_chip_cancel_icon_size" android:layout_height="@dimen/route_info_chip_cancel_icon_size" android:src="@drawable/yt_outline_x_circle_gm_grey200_20" android:contentDescription="@string/cancel" />
-</merge>

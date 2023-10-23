@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <bool name="enable_srp_card_shelf_thumbnail_to_the_side">true</bool>
-    <bool name="enable_srp_centered_chip_cloud">true</bool>
-</resources>

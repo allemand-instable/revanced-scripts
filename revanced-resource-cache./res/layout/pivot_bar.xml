@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<com.google.android.material.tabs.TabLayout android:layout_gravity="bottom" android:id="@id/pivot_bar" android:background="@color/ytm_color_grey_12" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" yt:tabGravity="fill" yt:tabIndicatorHeight="0.0dip" yt:tabMaxWidth="0.0dip" yt:tabUnboundedRipple="true"
-  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:yt="http://schemas.android.com/apk/res-auto" />
