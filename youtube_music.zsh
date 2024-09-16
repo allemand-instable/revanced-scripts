@@ -1,9 +1,9 @@
-cli_file="./bin/revanced-cli-4.0.2-all.jar"
-patch_file="./bin/revanced-patches-2.195.0.jar"
-integration_file="./apk/revanced-integrations-0.120.0.apk"
+cli_file="./bin/revanced-cli-4.6.0-all.jar"
+patch_file="./bin/revanced-patches-4.13.3.jar"
+integration_file="./apk/revanced-integrations-1.13.0.apk"
 
-apk_file="./apk/youtube_music/com.google.android.apps.youtube.music_6.23.54-62354240_minAPI24(arm64-v8a)(nodpi)_apkmirror.com.apk"
-output_file="./output/output_youtube_music_6.23.54.apk"
+apk_file="./apk/youtube_music/com.google.android.apps.youtube.music_7.03.52.apk"
+output_file="./output/output_youtube_music_7.03.52.apk"
 # output_file="./output/output_youtube_music_6.04.52.apk"
 
 
