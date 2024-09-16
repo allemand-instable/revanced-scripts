@@ -14,6 +14,71 @@
 # ~       FUNCTIONS
 # ~ —————————————————————
 
+function get_highest_common_versions(){    
+    if [[ -z $1 ]]; then
+        echo "Please provide an Android app package name"
+        return 1
+    elif [[ $# -gt 1 ]]; then
+        echo "Please provide only one Android app package name"
+        return 1
+    fi
+
+    local android_app="${1}"
+
+    local jq_query="to_entries | map(
+        select(
+            .value.compatiblePackages != null 
+            and (.value.compatiblePackages[].name == \"${android_app}\") 
+            and (.value.compatiblePackages[].versions != null)
+        )
+    ) | .[].key"
+
+    local compatible_packages_index=$(jq -r "$jq_query" bin/patches.json)
+    local idx_list=(${(f)compatible_packages_index})
+
+    # Retrieve the names based on the indices
+    local highest_versions=()
+
+    for idx in $idx_list; do
+        local jq_query=".[${idx}] | .name"
+        local name=$(jq -r "${jq_query}" bin/patches.json)
+        local jq_query=".[${idx}] | .compatiblePackages[].versions[]"
+        local sorted_versions=$(jq -r "${jq_query}" bin/patches.json | sort -V)
+        local highest_ver=$(echo $sorted_versions | tail -n 1)
+        highest_versions+=("$highest_ver")
+    done
+
+    local highest_common_ver=$(echo $highest_versions | tr ' ' '\n' | sort -V | head -n 1)
+
+    echo "${highest_common_ver}"
+}
+
+map_folder_to_app_name(){
+    # remove apk/ at the beginning
+    local folder_name=$(tr -d 'apk/' <<< "$*")
+    #
+    case "${folder_name}" in
+        "youtube")
+            echo "com.google.android.youtube"
+            ;;
+        "youtube_music")
+            echo "com.google.android.apps.youtube.music"
+            ;;
+        "tiktok")
+            echo "com.zhiliaoapp.musically"
+            ;;
+        "reddit")
+            echo "com.reddit.frontpage"
+            ;;
+        "instagram")
+            echo "com.instagram.android"
+            ;;
+        *)
+            echo "unknown"
+            return 1
+            ;;
+    esac
+}
 
 function update_apk_names {
     #
@@ -60,14 +125,15 @@ function update_apk_names {
             elif [[ "${choice}" == "download" ]]; then
             
                 echo "getting to download page"
+                download_version=$(get_highest_common_versions "$(map_folder_to_app_name "${apk_current_folder}")")
                 if [[ "${os}" == "Darwin" ]]; then
                     # Do something under Mac OS X platform
                     echo "Mac OS X"
-                    open "https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=youtube&arch%5B%5D=universal&arch%5B%5D=arm64-v8a&dpi%5B%5D=nodpi"
+                    open "https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=youtube+${download_version}&arch%5B%5D=universal&arch%5B%5D=arm64-v8a&dpi%5B%5D=nodpi"
                 else
                     # Do something under GNU/Linux platform
                     echo "GNU/Linux"
-                    echo "please download youtube apk from : https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=youtube&arch%5B%5D=universal&arch%5B%5D=arm64-v8a&dpi%5B%5D=nodpi"
+                    echo "please download youtube apk from : https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=youtube+${download_version}&arch%5B%5D=universal&arch%5B%5D=arm64-v8a&dpi%5B%5D=nodpi"
                 fi
 
                 
@@ -191,7 +257,7 @@ function update_revanced(){
 # fi
 
 # pwd
-apk_folders=("apk/youtube" "apk/youtube_music")
+apk_folders=("apk/youtube" "apk/youtube_music" "apk/tiktok" "apk/reddit" "apk/instagram")
 
 
 # ~ —————————————————————
@@ -203,6 +269,7 @@ flag=false
 update_revanced_flag=false
 pipeline=()
 OPTIND=1
+# * 1 | define a pipeline given the argument letters
 while getopts 'nymtauh' opt; do
     case $opt in
         n) update_revanced_flag=false; flag=true ;;
@@ -227,6 +294,7 @@ shift "$(( OPTIND - 1 ))"
 # *        break
 # £———————————————————————————————————
 
+# * 2 | if there was arguments (letters), either update revanced binaries, or if other letters, then update apk files according to the one in the pipeline (list)
 if "$flag"; then
     # Execution de l'update
     
