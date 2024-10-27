@@ -80,70 +80,108 @@ map_folder_to_app_name(){
     esac
 }
 
+function __get_phone_architecture(){
+    local arch=$(adb shell getprop ro.product.cpu.abi)
+    if [[ $? -ne 0 ]]; then
+        echo "⚠️ Please connect your phone to the computer and enable USB debugging"
+        return 1
+    else
+        echo "${arch}"
+    fi
+}
+
+function __print_apk_folder(){
+    local apk_current_folder="$1"
+    echo $apk_current_folder
+    echo "——————— 📂 APK 📂 ———————"
+    if [ "$(command -v exa)" ]; then
+        exa --tree --level=2 --color=always --sort=ext --group-directories-first "${apk_current_folder}"
+    else
+        ls -p "${apk_current_folder}" | grep -v /
+    fi
+    echo "———————————————————————"
+}
+
+#  [[ arguments ]]
+# 1: apk_current_folder
+# 2: choice
+function __change_apk_file_var(){
+    local apk_current_folder="$1"
+    local choice="$2"
+    local current_folder="${apk_current_folder#apk/}"
+    # modifies the 5ᵗʰ line of the script
+    # apk_file variable
+    sed -i.bak "5 s/.*/apk_file=\"\.\/apk\/${current_folder}\/${choice}\"/" "${current_folder}.zsh"
+}
+
+#  [[ arguments ]]
+# 1: apk_current_folder
+# 2: output_version
+function __change_output_file_var(){
+    local apk_current_folder="$1"
+    local current_folder="${apk_current_folder#apk/}"
+    local output_version
+    if [[ "${SHELL}" == *"zsh"* ]]; then
+        read 'output_version?➤ output version : '
+    else
+        read -p "➤ output version : " output_version
+    fi
+    # modifies the 6ᵗʰ line of the script
+    # output_file variable
+    sed -i.bak "6 s/.*/output_file=\"\.\/output\/output_${current_folder}_${output_version}.apk\"/" "${current_folder}.zsh"
+}
+
+#  [[ arguments ]]
+# 1: apk_current_folder
+function __download_apk_pure(){
+    local apk_current_folder="$1"
+    local phone_architecture=$(__get_phone_architecture)
+    # 
+    local app_name="${apk_current_folder#apk/}"
+    local download_version=$(get_highest_common_versions "$(map_folder_to_app_name "${apk_current_folder}")")
+    # 
+    local download_url_page="https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=${app_name}+${download_version}&arch%5B%5D=universal&arch%5B%5D=${phone_architecture}&dpi%5B%5D=nodpi"
+    echo "getting to download page"
+    if [[ "$(uname)" == "Darwin" ]]; then
+        # Do something under Mac OS X platform
+        open "${download_url_page}"
+    else
+        # Do something under GNU/Linux platform
+        echo "please download youtube apk from :\n${download_url_page}"
+    fi
+}
+
 function update_apk_names {
-    #
     local apk_folders=("$@")
 
     for apk_current_folder in "${apk_folders[@]}"; do
-        echo "——————— 📂 APK 📂 ———————"
-        if [ "$(command -v exa)" ]; then
-            exa --tree --level=2 --color=always --sort=ext --group-directories-first "${apk_current_folder}"
-        else
-            ls -p "${apk_current_folder}" | grep -v /
-        fi
-        echo "———————————————————————"
-        echo "processor architecture : $(adb shell getprop ro.product.cpu.abi)"
-        # user needs to know the architecture of his phone to download the right apk file
+        __print_apk_folder "${apk_current_folder}"
+
         echo "type 'download' for downloading the apk from apkmirror / 'cancel' to continue without downloading"
         while true; do
+            # ~ user specific apk choice
+            local choice
             if [[ "${SHELL}" == *"zsh"* ]]; then
                 read 'choice?➤ your choice : '
             else
                 read -p "➤ your choice : " choice
             fi
-            
+            # *) if the file exists, then we can proceed
             if [ -f "${apk_current_folder}/${choice}" ]; then
-                
                 echo "choosing : ${apk_current_folder}/${choice}"
-                
                 # $ input
-                current_folder=$(tr -d 'apk/' <<< "${apk_current_folder}")
-                sed -i.bak "5 s/.*/apk_file=\"\.\/apk\/${current_folder}\/${choice}\"/" "${current_folder}.zsh"
-                
+                __change_apk_file_var "${apk_current_folder}" "${choice}"
                 # $ output
-                #
-                if [[ "${SHELL}" == *"zsh"* ]]; then
-                    read 'output_version?➤ output version : '
-                else
-                    read -p "➤ output version : " output_version
-                fi
-                #
-                sed -i.bak "6 s/.*/output_file=\"\.\/output\/output_${current_folder}_${output_version}.apk\"/" "${current_folder}.zsh"
-
+                __change_output_file_var "${apk_current_folder}"
                 break
-                
             elif [[ "${choice}" == "download" ]]; then
-            
-                echo "getting to download page"
-                download_version=$(get_highest_common_versions "$(map_folder_to_app_name "${apk_current_folder}")")
-                if [[ "${os}" == "Darwin" ]]; then
-                    # Do something under Mac OS X platform
-                    echo "Mac OS X"
-                    open "https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=youtube+${download_version}&arch%5B%5D=universal&arch%5B%5D=arm64-v8a&dpi%5B%5D=nodpi"
-                else
-                    # Do something under GNU/Linux platform
-                    echo "GNU/Linux"
-                    echo "please download youtube apk from : https://www.apkmirror.com/?post_type=app_release&searchtype=apk&s=youtube+${download_version}&arch%5B%5D=universal&arch%5B%5D=arm64-v8a&dpi%5B%5D=nodpi"
-                fi
-
-                
+                __download_apk_pure
             elif [[ "${choice}" == "cancel" ]]; then
                 break
             else
                 echo "${apk_current_folder}/${choice} does not exist"
             fi
         done
-
     done
 }
 
@@ -232,29 +270,16 @@ function update_revanced(){
     # ❗ modify the automation shell scripts to patch youtube apps
     echo "updating the scripts..."
     cd ../
-    echo "➤ youtube.zsh"
-    sed -i.bak "1 s/.*/cli_file=\"\.\/bin\/revanced-cli-${cli_version_var}-all.jar\"/" youtube.zsh
-    sed -i.bak "2 s/.*/patch_file=\"\.\/bin\/revanced-patches-${patches_version_var}.jar\"/" youtube.zsh
-    sed -i.bak "3 s/.*/integration_file=\"\.\/apk\/revanced-integrations-${integrations_version_var}.apk\"/" youtube.zsh
-    # ➤ youtube music
-    # cd ../
-    echo "➤ youtube_music.zsh"
-    sed -i.bak "1 s/.*/cli_file=\"\.\/bin\/revanced-cli-${cli_version_var}-all.jar\"/" "youtube_music.zsh"
-    sed -i.bak "2 s/.*/patch_file=\"\.\/bin\/revanced-patches-${patches_version_var}.jar\"/" youtube_music.zsh
-    sed -i.bak "3 s/.*/integration_file=\"\.\/apk\/revanced-integrations-${integrations_version_var}.apk\"/" "youtube_music.zsh"
-    # ➤ tiktok
-    # TODO : TIKTOK NOT IMPLEMENTED YET
-    # cd ../
-    # echo "➤ tiktok.zsh"
-    # sed -i.bak "1 s/.*/cli_file=\"\.\/bin\/revanced-cli-${cli_version_var}-all.jar\"/" "tiktok.zsh"
-    # sed -i.bak "2 s/.*/patch_file=\"\.\/bin\/revanced-patches-${patches_version_var}.jar\"/" tiktok.zsh
-    # sed -i.bak "3 s/.*/integration_file=\"\.\/apk\/revanced-integrations-${integrations_version_var}.apk\"/" "tiktok.zsh"
+    local app_script_files = ("youtube" "youtube_music" "tiktok" "reddit" "instagram")
+    for script_file in "$app_script_files"; do
+        # cli_file variable
+        sed -i.bak "1 s/.*/cli_file=\"\.\/bin\/revanced-cli-${cli_version_var}-all.jar\"/" ${script_file}.zsh
+        # patch_file variable
+        sed -i.bak "2 s/.*/patch_file=\"\.\/bin\/revanced-patches-${patches_version_var}.jar\"/" ${script_file}.zsh
+        # integration_file variable
+        sed -i.bak "3 s/.*/integration_file=\"\.\/apk\/revanced-integrations-${integrations_version_var}.apk\"/" ${script_file}.zsh
+    done
 }
-
-
-# if [ "$(command -v exa)" ]; then
-#     exa --color=always --sort=ext --group-directories-first --icons
-# fi
 
 # pwd
 apk_folders=("apk/youtube" "apk/youtube_music" "apk/tiktok" "apk/reddit" "apk/instagram")
