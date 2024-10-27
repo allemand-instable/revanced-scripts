@@ -1,9 +1,9 @@
 cli_file="./bin/revanced-cli-4.6.0-all.jar"
-patch_file="./bin/revanced-patches-4.11.0.jar"
-integration_file="./apk/revanced-integrations-1.11.1.apk"
+patch_file="./bin/revanced-patches-4.17.0.jar"
+integration_file="./apk/revanced-integrations-1.16.0.apk"
 
-apk_file="./apk/tiktok/com.zhiliaoapp.musically_32.5.3.apk"
-output_file="./output/output_tiktok_32.5.3.apk"
+apk_file="./apk/tiktok/com.zhiliaoapp.musically_36.5.4.apk"
+output_file="./output/output_tiktok_36.5.4.apk"
 
 
 adb shell exit

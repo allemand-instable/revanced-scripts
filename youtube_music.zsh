@@ -1,6 +1,6 @@
 cli_file="./bin/revanced-cli-4.6.0-all.jar"
-patch_file="./bin/revanced-patches-4.16.0.jar"
-integration_file="./apk/revanced-integrations-1.15.0.apk"
+patch_file="./bin/revanced-patches-4.17.0.jar"
+integration_file="./apk/revanced-integrations-1.16.0.apk"
 
 apk_file="./apk/youtube_music/com.google.android.apps.youtube.music_7.03.52.apk"
 output_file="./output/output_youtube_music_7.03.52.apk"
